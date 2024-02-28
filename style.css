@@ -1,0 +1,385 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Roboto';
+    font-size: 40px;
+    color: #EEEEEE;
+    font-weight: 100;
+}
+
+h2 {
+    font-family: 'Roboto';
+    font-size: 32px;
+    font-weight: 100;
+    color: #272829;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.container {
+    width: 100vw;
+    height: auto;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+section {
+    position: relative;
+}
+
+.section-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.section-bottom {
+    position: absolute;
+    top: 98%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* [END] Common */
+
+/* Section: navbar */
+.navbar {
+    background-color: #031232;
+    text-align: center;
+    justify-content: center;
+    padding: 5px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-list li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #EEEEEE;
+    font-weight: 400;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.nav-list li a:hover {
+    color: #FF5722;
+}
+
+/* [END] Section: navbar */
+
+/* Section: Intro */
+.intro {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-image: url(background.jpg); */
+    width: 100%;
+    height: 100vh;
+}
+
+.intro-content hr {
+    width: 100%;
+    color: #EEEEEE;
+}
+
+.intro-content p {
+    font-size: 20px;
+    color: #EEEEEE;
+    font-family: 'Roboto';
+}
+
+.intro-content span {
+    font-size: 20px;
+    color: #EEEEEE;
+    font-family: 'Roboto Serif';
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.resume {
+    margin-top: 100px;
+}
+
+.resume button {
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.resume-button {
+    border: none;
+    color: #EEEEEE;
+    font-size: 20px;
+    background-color: #032264;
+    text-align: center;
+    text-decoration: none;
+    display: table-row;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: 2px solid #ddd;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume button:hover {
+    cursor: pointer !important;
+    background-color: #333333;
+    color: #ff9900;
+}
+
+.scroll-down img {
+    filter: invert(1);
+}
+
+#scroll {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+/* [END] Section: Intro */
+
+/* Section: About Me */
+#about {
+    width: 100vw;
+    height: auto;
+    align-items: center;
+    background-color: lightgrey;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+}
+
+.about-content p {
+    font-size: 20px;
+    color: #272829;
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
+.about-content a {
+    color: #051a2d;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.about-content a:hover {
+    color: #FF5722;
+    font-weight: bold;
+}
+
+.about-content img {
+    width: auto;
+    height: 30vh;
+    border-radius: 50%;
+    padding-bottom: 2vh;
+}
+
+/* [END] Section: About Me */
+
+/* Section: Education */
+#education {
+    width: 100vw;
+    background-color: #e5e5e5;
+    gap: 16px;
+    justify-items: center;
+    justify-content: center;
+    color: #272829;
+}
+
+.degrees {
+    padding-left: 20vw;
+    padding-right: 20vw;
+    font-size: 20px;
+}
+
+.njit {
+    margin-bottom: 50px;
+}
+
+.card {
+    padding: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+    background-color: #d2d2d2;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    transform: scale(1.025);
+    z-index: 2;
+
+}
+
+/* [END] Section: Education */
+
+/* Section: Work Experience */
+#work-experience {
+    width: 100vw;
+    background-color: #D8D9DA;
+    gap: 16px;
+    justify-items: center;
+    justify-content: center;
+}
+
+.companies {
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
+.company-container {
+    padding: 5px;
+    font-size: 20px;
+}
+
+/* [END] Section: Work Experience */
+
+.skill-name {
+    display: inline-block;
+    width: 150px;
+    font-size: 25px;
+}
+
+.full-star {
+    color: rgb(255, 174, 0);
+    font-size: 25px;
+}
+
+.empty-star {
+    color: gray;
+    font-size: 25px;
+}
+
+/* Section: Skills */
+.skills {
+    background-color: #b2b2b2;
+}
+
+#skills {
+    padding-top: 45px;
+    padding-bottom: 10px;
+}
+
+td {
+    width: 18%;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* [END] Section: Skills */
+
+/* Section: Contact */
+#contact {
+    background-color: #031232;
+    /* background-color: #191919; */
+    color: #EEEEEE;
+}
+
+#contact h2 {
+    color: #EEEEEE;
+}
+
+.email img {
+    width: 75px;
+    height: auto;
+    filter: saturate(0);
+}
+
+.email img:hover {
+    transform: scale(1.20);
+    transition-duration: 0.4s;
+    filter: saturate(1);
+    filter: drop-shadow(1);
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 25px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+    transform: scale(1.05);
+    transition-duration: 0.4s;
+    opacity: 0.9;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: #EEEEEE;
+}
+
+.fa-github {
+    background: #777777;
+    color: #EEEEEE;
+}
+
+.fa-instagram {
+    background: #c92bb7;
+    color: #EEEEEE;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: #EEEEEE;
+}
+
+#contact {
+    padding-bottom: 2vh;
+}
+
+/* [END] Section: Contact */
+
+/* Footer */
+footer {
+    /* background-color: #191919; */
+    background-color: #031232;
+    margin: 0;
+    padding: 0;
+}
+
+.footer p {
+    color: #EEEEEE;
+}
+
+/* [END] Footer */
+
+#scroll1 {
+    width: 40px;
+    height: 40px;
+}
+
+.scroll_up {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    border-radius: 50%;
+}
